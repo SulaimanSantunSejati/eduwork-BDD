@@ -7,8 +7,7 @@ async function setupNodeEvents(on, config) {
   on("file:preprocessor", browserify.default(config));
 
   return config;
-}   
-const { defineConfig } = require("cypress");
+}
 
 module.exports = defineConfig({
   pageLoadTimeout: 10000,

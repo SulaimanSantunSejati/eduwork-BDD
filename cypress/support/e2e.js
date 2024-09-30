@@ -14,7 +14,14 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
 
+import './commands';
+import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor';
+
+// This function is used to setup the plugin
+export async function setupNodeEvents(on, config) {
+  await addCucumberPreprocessorPlugin(on, config);
+  return config;
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+}
