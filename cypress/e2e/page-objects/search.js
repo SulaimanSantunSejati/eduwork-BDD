@@ -1,5 +1,5 @@
 
-import HomePage from './zeroweb.page';
+import HomePage from './search.page';
 const { When, Then, Given } = require('@badeball/cypress-cucumber-preprocessor');
 
 // Scenario: Successful search with a valid keyword
